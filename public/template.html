@@ -13,22 +13,28 @@
     <div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
       <!-- ! Left Container  -->
       <div class="space-y-2">
-        <div class="skeleton h-8"></div>
-        <div class="skeleton h-8"></div>
-        <div class="skeleton h-8"></div>
-        <button class="btn">Try Click Me</button>
+        <input id="input1" type="text" class="input input-borderedc w-full" placeholder="e.g. Programmers while reviewing the codes"/>
+        <input id="input2" type="text" class="input input-borderedc w-full" placeholder="Bottom text"/>
+        <input id="input3" type="text" class="input input-borderedc w-full" placeholder="a url of a meme"/>
+        <button id="button-generate" class="btn">Try Click Me</button>
       </div>
 
       <!-- ! Right Container -->
       <div>
         <p class="bg-black text-center text-white">
-          <strong id="output-caption">"Meme Text Goes Here"</strong>
+          <strong id="output-caption1">"Meme Text Goes Here"</strong>
         </p>
         <img
+          id="img1"
           src="./imgs/sheldon_meme_template.jpg"
           alt="sheldon_meme_template"
         />
+        <p class="bg-black text-center text-white">
+          <strong id="output-caption2">"Bottom Text Goes Here"</strong>
+        </p>
       </div>
     </div>
+
+    <script src="../src/meme.js"></script>
   </body>
 </html>
